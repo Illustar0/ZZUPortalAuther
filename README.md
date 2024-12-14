@@ -1,29 +1,31 @@
 # ZZUPortalAuther
-<font color=gray size=3>Portal authentication for Zhengzhou University campus network.</font>
+<font color=gray size=3>调用 ZZU.Py 实现的郑州大学校园网多拨认证工具</font>
 
 ## Getting Started
 
 ```shell
 pip install httpx fake_useragent toml psutil
-# If you are using OpenWrt then you should install psutil via opkg instead of PIP!
+# 如果你正在使用 Openwrt，记得使用 opkg 来安装 psutil
 # opkg install python3-psutil
 python ZZUPortalAuther.py
-# Using crontab might be a good idea
+# 如果你正在使用 mwan3，请在认证前停用它
 ```
 
 ## Config
 
 ```toml
-[Account]
-account="YourAccount"
+[accounts.one]
+usercode="YourAccount"
 password="YourPassword"
-[Settings]
-# Your interfaces
+interfaces=[ "macvlan1","macvlan2","macvlan3","macvlan4" ]
+[accounts.two]
+usercode="YourAccount"
+password="YourPassword"
 interfaces=[ "macvlan1","macvlan2","macvlan3","macvlan4" ]
 ```
-## To Do
+## Done & To Do
 
-- [ ] Multi-account support
+- [x] 多账号支持
 
 ## License
 

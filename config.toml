@@ -1,5 +1,0 @@
-[Account]
-account="YourAccount"
-password="YourPassword"
-[Settings]
-interfaces=[ "macvlan1","macvlan2","macvlan3","macvlan4" ]

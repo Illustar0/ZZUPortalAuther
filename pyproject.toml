@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "zzuportalauther"
+version = "0.1.0"
+description = "调用 ZZU.Py 实现的郑州大学校园网多拨认证工具"
+authors = ["Illustar0 <me@illustar0.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+toml = "*"
+zzupy = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
