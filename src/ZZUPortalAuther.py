@@ -11,5 +11,4 @@ for name,data in config['accounts'].items():
     password = data["password"]
     client=ZZUPy(usercode,password)
     for interface in data["interfaces"]:
-        print(interface)
-        #print(client.Network.portal_auth(interface,base_url))
+        print(client.Network.portal_auth(interface,base_url))

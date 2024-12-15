@@ -4,9 +4,9 @@
 ## Getting Started
 
 ```shell
-pip install httpx fake_useragent toml psutil
-# 如果你正在使用 Openwrt，记得使用 opkg 来安装 psutil
+# 如果你正在使用 Openwrt，记得先使用 opkg 来安装 psutil
 # opkg install python3-psutil
+pip install zzupy psutil
 python ZZUPortalAuther.py
 # 如果你正在使用 mwan3，请在认证前停用它
 ```
