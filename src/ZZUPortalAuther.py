@@ -9,6 +9,7 @@ except:
 for name, data in config["accounts"].items():
     usercode = data["usercode"]
     password = data["password"]
+    isp = data["isp"]
     client = ZZUPy(usercode, password)
     for interface in data["interfaces"]:
-        print(client.Network.portal_auth(interface, base_url))
+        print(client.Network.portal_auth(interface, base_url, isp=isp))

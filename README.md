@@ -15,20 +15,21 @@ python ZZUPortalAuther.py
 ## Config
 
 ```toml
-# 账号 1
 [accounts.one]
 usercode="YourAccount"
 password="YourPassword"
+isp="campus"
 interfaces=[ "macvlan1","macvlan2","macvlan3","macvlan4" ]
-# 账号 2
 [accounts.two]
 usercode="YourAccount"
 password="YourPassword"
+isp="cm"
 interfaces=[ "macvlan5","macvlan6","macvlan7","macvlan8" ]
 ```
 ## Done & To Do
 
 - [x] 多账号支持
+- [x] 多运营商支持
 
 ## License
 
