@@ -31,6 +31,10 @@ interfaces=[ "macvlan5","macvlan6","macvlan7","macvlan8" ]
 - [x] 多账号支持
 - [x] 多运营商支持
 
+## 碎碎念
+移动宽带为多终端共享带宽，多拨已无实际作用
+后续（可能）接入的电信和联通宽带大抵也是这种模式
+
 ## License
 
 License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
